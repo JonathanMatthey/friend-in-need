@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :widgets
+  resources :sightings
+
+  # # sightings api
+  get 'api/sightings' => 'sightings#view'
+  post 'api/sightings' => 'sightings#create'
+  # get 'api/sightings/:id' => 'sightings#show'
+  # post 'api/sightings' => 'sightings#create'
+  # patch 'api/sightings/:id' => 'sightings#update'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
