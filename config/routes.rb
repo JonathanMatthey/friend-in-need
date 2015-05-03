@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   # # sightings api
   get 'api/sightings' => 'sightings#view'
   post 'api/sightings' => 'sightings#create'
-  # get 'api/sightings/:id' => 'sightings#show'
-  # post 'api/sightings' => 'sightings#create'
-  # patch 'api/sightings/:id' => 'sightings#update'
+  get 'api/sightings/:id' => 'sightings#show'
+  patch 'api/sightings/:id' => 'sightings#update'
+  delete 'api/sightings/:id' => 'sightings#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
