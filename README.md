@@ -36,3 +36,24 @@ For more information about using Ruby on Heroku, see these Dev Center articles:
 
 - [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
 
+
+## App main routes
+
+Homepage, landing page - [http://localhost:5000/](http://localhost:5000/)
+Login - [http://localhost:5000/login.html](http://localhost:5000/login.html)
+Admin page that lists all sightings - [http://localhost:5000/sightings](http://localhost:5000/sightings)
+
+##### API
+Read all sightings - json - [http://localhost:5000/api/sightings](http://localhost:5000/api/sightings)
+
+
+create a new sighting using ajax json like this:
+```
+$.ajax({
+  type: "POST",
+  url: "/api/sightings",
+  data: {"sighting":{'name':'dave','lat':40.6184703272875,'long':-73.9314422416687}},
+  success: function(){alert('yay')},
+  dataType: "json"
+});
+```
