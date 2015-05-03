@@ -1,17 +1,19 @@
-# ruby-getting-started
+# Friend in Need backend
 
-A barebones Rails app, which can easily be deployed to Heroku.
+Ruby / rails applaition
 
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
 
+## Start your database
+
+make sure you have postgres running... i suggest using PostgressApp [http://postgresapp.com/](http://postgresapp.com/)
 
 ## Running Locally
 
 Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ git clone git@github.com:JonathanMatthey/friend-in-need.git
+$ cd friend-in-need
 $ bundle install
 $ rake db:create db:migrate
 $ foreman start web
