@@ -5,6 +5,8 @@ class CreateSightings < ActiveRecord::Migration
       t.float :lat
       t.float :long
       t.boolean :fuckedup
+      t.boolean :unconscious
+      t.boolean :intoxicated
 
       t.timestamps
     end

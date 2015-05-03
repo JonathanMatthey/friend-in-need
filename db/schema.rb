@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20150201220004) do
     t.float    "lat"
     t.float    "long"
     t.boolean  "fuckedup"
+    t.boolean  "unconscious"
+    t.boolean  "intoxicated"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
